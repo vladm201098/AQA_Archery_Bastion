@@ -6,17 +6,17 @@ from airtest.core.api import *
 auto_setup(__file__)
 
 
-from poco.drivers.ue4 import UE4Poco
-poco = UE4Poco()
+#from poco.drivers.ue4 import UE4Poco
+#poco = UE4Poco()
 
 
-from poco.drivers.android.uiautomation import AndroidUiautomationPoco
-poco = AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=False)
+#from poco.drivers.android.uiautomation import AndroidUiautomationPoco
+#poco = AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=False)
 
 
-from poco.drivers.unity3d import UnityPoco
-poco = UnityPoco()
-poco("android.widget.FrameLayout")
+# from poco.drivers.unity3d import UnityPoco
+#poco = UnityPoco()
+#poco("android.widget.FrameLayout")
 
 for i in range(100):
     if i<100:
