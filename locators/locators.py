@@ -29,9 +29,13 @@ class CleanDataLocators:
     ok_button = Template(r"tpl1662491300727.png", record_pos=(0.296, 0.144), resolution=(1080, 1920)) # OK
     back_button = Template(r"tpl1662491358519.png", record_pos=(-0.449, -0.792), resolution=(1080, 1920)) # Стрелочка назад
     
+
+class Debagger:    
     
     
     # MAX Mediation Debagger
+    window_debug_default = Template(r"tpl1663250895027.png", record_pos=(-0.256, -0.786), resolution=(1080, 1920))
+
     window_debug = Template(r"tpl1662711477262.png", record_pos=(-0.421, -0.671), resolution=(1080, 1920)) # APP info, because color can change
     debug_button = Template(r"tpl1662719272821.png", record_pos=(0.405, -0.231), resolution=(1080, 1920))
     showgdpr = Template(r"tpl1662731343803.png", record_pos=(-0.117, -0.753), resolution=(1080, 1920))
@@ -43,7 +47,7 @@ class CleanDataLocators:
     rate_us_button = Template(r"tpl1662731413182.png", record_pos=(-0.115, 0.285), resolution=(1080, 1920))
 
 
-    
+class GDPR:    
     
     # GDPR
     logo_azurgames = Template(r"tpl1662714601964.png", record_pos=(-0.006, -0.327), resolution=(1080, 1920)) # Лого AzurGames Нужно будет потом добавить проверку на нгаличие этого лого
