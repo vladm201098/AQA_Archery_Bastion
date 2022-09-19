@@ -62,60 +62,62 @@ def start_app():
     touch(CommonLocators.icon_archery)  # Поиск и тач по значку Archery
 
 
-def debug_windows():
-    wait(DebaggerLocators.window_debug)
+
+def check_debug_in_build(): # Проверка на наличие дебаггера
+    sleep(15.0)
+    check_value = exists(DebaggerLocators.window_debug) 
+    sleep(2.0)
+    print(check_value)
+    if check_value is False:
+        print("There isn't debugger")
+    else:
+        print("There is debugger")
+        key_back()
+    
+
+def key_back(): # Назад - выход из дебаггера
+    keyevent("BACK")  
 
 
-def check_debug_in_build():
-    assert_exists(DebaggerLocators.window_debug, "Check debug windows in build.")  # Проверка на наличие дебаггера
+def gdpr_window(): # Ожидание загрузки окна GDPR
+    wait(GDPRLocators.logo_azurgames)  
 
 
-def key_back():
-    keyevent("BACK")  # Назад - выход из дебаггера
-
-
-def Gdpr_window():
-    wait(GDPRLocators.logo_azurgames)  # Ожидание загрузки окна GDPR
-
-
-def touch_terms_button():
+def touch_terms_button(): # Ожидание загрузки 
     touch(GDPRLocators.terms_button)
 
 
-def check_link_terms():
+def check_link_terms(): # Проверка линки на достоверность
     assert_exists(GDPRLocators.terms_and_privacy_link,
-              "Check currectly link in Terms of Servise.")  # Проверка линки на достоверность
+              "Check currectly link in Terms of Servise.")
+    key_back()
+    key_back()
 
 
-
-def touch_privacy_button():
+def touch_privacy_button(): # Ожидание загрузки
     touch(GDPRLocators.privacy_button)
 
 
-def check_link_privacy():
+def check_link_privacy(): # Проверка линки на достоверность
     assert_exists(GDPRLocators.terms_and_privacy_link,
-              "Check currectly link in Privacy Policy.")  # Проверка линки на достоверность
+              "Check currectly link in Privacy Policy.")
+    key_back()
+    key_back()
 
 
 def touch_accept_button():
     touch(GDPRLocators.accept_gdpr_button)
-    print("OOOOK")
+    print("PASSED")
 
     
 start_app()
-debug_windows()
 check_debug_in_build()
-key_back()
-Gdpr_window()
+gdpr_window()
 touch_terms_button()
 check_link_terms()
-key_back()
-key_back()
-Gdpr_window()
+gdpr_window()
 touch_privacy_button()
 check_link_privacy()
-key_back()
-key_back()
 touch_accept_button()
     
 
@@ -123,5 +125,6 @@ touch_accept_button()
 # generate html report
 # from airtest.report.report import simple_report
 # simple_report(__file__, logpath=True)
+
 
 
