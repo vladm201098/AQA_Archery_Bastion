@@ -64,9 +64,10 @@ def start_app():
 
 
 def check_debug_in_build(): # Проверка на наличие дебаггера
-    sleep(15.0)
+    
+    sleep(20.0)
     check_value = exists(DebaggerLocators.window_debug) 
-    sleep(2.0)
+    sleep(3.0)
     print(check_value)
     if check_value is False:
         print("There isn't debugger")
