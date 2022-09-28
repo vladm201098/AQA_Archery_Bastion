@@ -74,16 +74,22 @@ class RateUsLocators:
     #Rate US
     
     logo_rate_us = Template(r"tpl1663606776156.png", record_pos=(-0.002, -0.211), resolution=(1080, 1920)) # Надпись Rate us
-    submit_button_active  = Template(r"tpl1663607102842.png", record_pos=(0.005, 0.315), resolution=(1080, 1920)) # Кнопка Submit
+    submit_button_active  = Template(r"tpl1664295992133.png", record_pos=(-0.008, 0.305), resolution=(1080, 1920)) # Кнопка Submit
     submit_button_nonactive = Template(r"tpl1663662505106.png", record_pos=(0.003, 0.306), resolution=(1080, 1920))
     cross = Template(r"tpl1663662652124.png", record_pos=(0.286, -0.278), resolution=(1080, 1920))
-    play_markert_logo = Template(r"tpl1663663120655.png", record_pos=(-0.272, -0.788), resolution=(1080, 1920))
-    play_markert_back = Template(r"tpl1663663246685.png", record_pos=(-0.449, -0.794), resolution=(1080, 1920))
+    play_market_logo = Template(r"tpl1663663120655.png", record_pos=(-0.272, -0.788), resolution=(1080, 1920))
+    archery_stor_logo = Template(r"tpl1664278090751.png", record_pos=(-0.1, -0.687), resolution=(1080, 1920))
+
+    play_market_back = Template(r"tpl1663663246685.png", record_pos=(-0.449, -0.794), resolution=(1080, 1920))
 
 
-    rate_us_5 = Template(r"tpl1663662223998.png", record_pos=(0.164, 0.017), resolution=(1080, 1920))
-    rate_us_3 = Template(r"tpl1663662574678.png", record_pos=(-0.003, 0.008), resolution=(1080, 1920))
-    rate_us_1 = Template(r"tpl1663662599741.png", record_pos=(-0.161, 0.015), resolution=(1080, 1920))
+    rate_us_5 = Template(r"tpl1664284721163.png", record_pos=(0.16, 0.019), resolution=(1080, 1920))
+    rate_us_4 = Template(r"tpl1664284685358.png", record_pos=(0.08, 0.02), resolution=(1080, 1920))
+    rate_us_3 = Template(r"tpl1664284666300.png", record_pos=(-0.001, 0.019), resolution=(1080, 1920))
+    rate_us_2 = Template(r"tpl1664284646073.png", record_pos=(-0.081, 0.019), resolution=(1080, 1920))
+    rate_us_1 = Template(r"tpl1664282577580.png", record_pos=(-0.162, 0.016), resolution=(1080, 1920))
+
+
 
 
 
