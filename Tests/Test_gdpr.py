@@ -59,17 +59,19 @@ def touch_accept_button():
     print("PASSED")
 
     
-start_app("com.bastion.archers")
-check_debug_in_build()
-gdpr_window()
-touch_terms_button()
-check_link_terms()
-gdpr_window()
-touch_privacy_button()
-check_link_privacy()
-touch_accept_button()
+def start_test_gdpr():
     
-
+    start_app("com.bastion.archers")
+    check_debug_in_build()
+    gdpr_window()
+    touch_terms_button()
+    check_link_terms()
+    gdpr_window()
+    touch_privacy_button()
+    check_link_privacy()
+    touch_accept_button()
+    
+#start_test_gdpr() # Manual start test
 
 # generate html report
 # from airtest.report.report import simple_report

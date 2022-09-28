@@ -45,7 +45,7 @@ def open_or_closed_debug(): # Открытие\закрытие окна деб�
     SleepEvent(1),
     UpEvent(0), UpEvent(1)]
     dev.touch_proxy.perform(multitouch_event)
-    print("The debugger is open/closed")
+    #print("The debugger is open/closed")
     sleep(1)
     
 def open_rate_us_window(): # Открытие окна Rate US
@@ -95,36 +95,39 @@ def rateus_do():
 
 
     
+def start_test_rateus():
+    check_app_usage()
+    # 1 star
+    rateus_do()
+    rating_one()
+    touch_submit()
+    check_main_page()
+    # 2 stars
+    rateus_do()
+    rating_two()
+    touch_submit()
+    check_main_page()
+    # 3 stars
+    rateus_do()
+    rating_tree()
+    touch_submit()
+    check_main_page()
+    # 4 stars
+    rateus_do()
+    rating_four()
+    touch_submit()
+    check_main_page()
+    # 5 stars
+    rateus_do()
+    rating_five()
+    touch_submit()
+    rate_us_test_5()
+    check_main_page()
 
-check_app_usage()
-# 1 star
-rateus_do()
-rating_one()
-touch_submit()
-check_main_page()
-# 2 stars
-rateus_do()
-rating_two()
-touch_submit()
-check_main_page()
-# 3 stars
-rateus_do()
-rating_tree()
-touch_submit()
-check_main_page()
-# 4 stars
-rateus_do()
-rating_four()
-touch_submit()
-check_main_page()
-# 5 stars
-rateus_do()
-rating_five()
-touch_submit()
-rate_us_test_5()
-check_main_page()
+    stop_app("com.bastion.archers")
+    
+#start_test_rateus() # Manual start test
 
-stop_app("com.bastion.archers")
 # generate html report
 # from airtest.report.report import simple_report
 # simple_report(__file__, logpath=True)
