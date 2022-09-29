@@ -26,6 +26,14 @@ class CoreGameLocators:
     victory_logo = Template(r"tpl1663671009641.png", record_pos=(-0.004, -0.248), resolution=(1080, 1920))
     getx2_button = Template(r"tpl1663671052576.png", record_pos=(0.068, 0.407), resolution=(1080, 1920))
     continue_button = Template(r"tpl1663671081825.png", record_pos=(0.001, 0.645), resolution=(1080, 1920))
+    bobm_button = Template(r"tpl1664377528029.png", record_pos=(-0.298, 0.568), resolution=(1080, 1920))
+    restart_ingame_button = Template(r"tpl1664377567555.png", record_pos=(0.003, 0.347), resolution=(1080, 1920))
+    restart_ingame_icon = Template(r"tpl1664377852385.png", record_pos=(-0.006, -0.247), resolution=(1080, 1920))
+    menu_ingame_button = Template(r"tpl1664377886739.png", record_pos=(-0.007, 0.202), resolution=(1080, 1920))
+    cross_ingame_button = Template(r"tpl1664378109082.png", record_pos=(-0.438, -0.754), resolution=(1080, 1920))
+
+
+
 
 
 
