@@ -29,15 +29,15 @@ if not cli_setup():
 
 def strike_in_enemy(y):
     #swipe(Template(r"tpl1664379316388.png", record_pos=(0.409, -0.101), resolution=(1080, 1920)), vector=[-0.471, 0.256],duration=1)
-    swipe(Template(r"tpl1664377325992.png", record_pos=(0.351, -0.202), resolution=(1080, 1920)), vector=[-0.7000, y])
+    swipe(Template(r"tpl1664377325992.png", record_pos=(0.351, -0.202), resolution=(1080, 1920)), vector=[-0.7000, y],duration=1)
     print(y)
    
 
 def check_and_strike():
     i = 1
-    y = 0.1603
+    y = 0.11003
     
-    while i < 12:
+    while i < 20:
         status_win = exists(Template(r"tpl1664381712816.png", record_pos=(0.005, -0.248), resolution=(1080, 1920)))
         #print(status_win)
         status_lose = exists(Template(r"tpl1664381817494.png", record_pos=(0.001, -0.164), resolution=(1080, 1920)))
@@ -45,23 +45,23 @@ def check_and_strike():
         # Cравниваем с координатами картинок , координаты указаны в инфо
         if status_win == (545, 692):
             i = i + 1000
-            print(i)
+            #print(i)
             print("win")
             return status_win
         elif status_lose == (541, 784):
             i = i + 1000
-            print(i)
+            #print(i)
             print('Lose')
             return status_lose
 
-        if i < 12:
+        if i < 20:
             strike_in_enemy(y)
             sleep(10)
             i = i + 1
             y = y + 0.0065
-            print(i)
+            #print(i)
 
-print(check_and_strike())
+#check_and_strike()
 
 
 # generate html report

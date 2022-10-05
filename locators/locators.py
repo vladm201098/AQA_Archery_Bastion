@@ -96,9 +96,15 @@ class RateUsLocators:
     rate_us_3 = Template(r"tpl1664284666300.png", record_pos=(-0.001, 0.019), resolution=(1080, 1920))
     rate_us_2 = Template(r"tpl1664284646073.png", record_pos=(-0.081, 0.019), resolution=(1080, 1920))
     rate_us_1 = Template(r"tpl1664282577580.png", record_pos=(-0.162, 0.016), resolution=(1080, 1920))
+    
 
-
-
+class StartLevelLocators:
+    first_play_level_button = Template(r"tpl1664553179625.png", record_pos=(0.059, 0.264), resolution=(1080, 1920))
+    second_play_level_button = Template(r"tpl1664553230875.png", record_pos=(0.065, 0.256), resolution=(1080, 1920))
+    third_play_level_button = Template(r"tpl1664556321293.png", record_pos=(0.061, 0.262), resolution=(1080, 1920))
+    fourth_play_level_button = Template(r"tpl1664556438567.png", record_pos=(0.06, 0.257), resolution=(1080, 1920))
+    fifth_play_level_button = Template(r"tpl1664556519478.png", record_pos=(0.059, 0.263), resolution=(1080, 1920))
+    sixth_play_level_button = Template(r"tpl1664556636120.png", record_pos=(0.061, 0.258), resolution=(1080, 1920))
 
 
 

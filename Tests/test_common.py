@@ -7,7 +7,7 @@ from AQA_Archery_Bastion.locators.data_clean import *
 from AQA_Archery_Bastion.tests.test_gdpr import *
 from AQA_Archery_Bastion.tests.test_rate_us import *
 if not cli_setup():
-    auto_setup(__file__, logdir=True, devices=["Android:///",])
+    auto_setup(__file__, logdir=True, devices=["android://127.0.0.1:5037/127.0.0.1:62025?cap_method=MINICAP&&ori_method=MINICAPORI&&touch_method=MINITOUCH",])
 
 
 

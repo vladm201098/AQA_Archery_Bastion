@@ -26,7 +26,7 @@ def start_data_clean():
     print("Data's app is empty")
 
 
-#start_data_clean() # Manual start test
+start_data_clean() # Manual start test
 
 
 #generate html report
