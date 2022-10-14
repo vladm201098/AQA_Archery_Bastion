@@ -124,7 +124,7 @@ def start_test_rateus():
     rate_us_test_5()
     check_main_page()
 
-    stop_app("com.bastion.archers")
+    #stop_app("com.bastion.archers")
     
 #start_test_rateus() # Manual start test
 

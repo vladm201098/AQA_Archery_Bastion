@@ -107,7 +107,17 @@ class StartLevelLocators:
     sixth_play_level_button = Template(r"tpl1664556636120.png", record_pos=(0.061, 0.258), resolution=(1080, 1920))
 
 
+class PopupNoadsLocators:
+    tired_of_ads = Template(r"tpl1665507240292.png", record_pos=(-0.004, -0.552), resolution=(1080, 1920))
+    no_ads_button = Template(r"tpl1665507537362.png", record_pos=(-0.164, 0.422), resolution=(1080, 1920))
+    no_ads_extra_button = Template(r"tpl1665507640307.png", record_pos=(0.205, 0.421), resolution=(1080, 1920))
+    cross_popup_button = Template(r"tpl1665507692457.png", record_pos=(-0.432, -0.767), resolution=(1080, 1920))
 
+
+class PopupTrollLocators:
+    master_troll = Template(r"tpl1665507968094.png", record_pos=(-0.002, -0.49), resolution=(1080, 1920))
+    pay_button = Template(r"tpl1665508015991.png", record_pos=(0.0, 0.431), resolution=(1080, 1920))
+    cross_popup_button = Template(r"tpl1665507692457.png", record_pos=(-0.432, -0.767), resolution=(1080, 1920))
 
 
 
