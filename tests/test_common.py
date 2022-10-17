@@ -3,7 +3,7 @@ __author__ = "Vladislav"
 
 from airtest.core.api import *
 from airtest.cli.parser import cli_setup
-from AQA_Archery_Bastion.locators.data_clean import *
+from AQA_Archery_Bastion.core.data_clean import *
 from AQA_Archery_Bastion.tests.test_gdpr import *
 from AQA_Archery_Bastion.tests.test_rate_us import *
 if not cli_setup():
