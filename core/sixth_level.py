@@ -3,8 +3,9 @@ __author__ = "Vladislav"
 
 from airtest.core.api import *
 from airtest.cli.parser import cli_setup
-from AQA_Archery_Bastion.core.core import *
+from AQA_Archery_Bastion.core.core_strike import *
 from AQA_Archery_Bastion.core.def_core_first_sixth import *
+
 if not cli_setup():
     auto_setup(__file__, logdir=True, devices=["android://127.0.0.1:5037/127.0.0.1:62025?cap_method=MINICAP&&ori_method=ADBORI&&touch_method=MINITOUCH",], project_root="C:/Users/Vladislav/Downloads/AirtestIDE/AirtestIDE/AQA_Archery_Bastion/core")
 
