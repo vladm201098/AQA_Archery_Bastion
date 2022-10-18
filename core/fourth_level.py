@@ -19,6 +19,8 @@ def fourth_level():
     strike_in_enemy(y + 0.0065)
     sleep(12.0)
     strike_in_enemy(y + 0.0165)
+    sleep(12.0)
+    strike_in_enemy(y + 0.0265)
     sleep(5.0)
     success_finish_level()
     print("Fourth level success finished")

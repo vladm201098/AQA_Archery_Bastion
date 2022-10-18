@@ -86,6 +86,8 @@ class RateUsLocators:
     submit_button_nonactive = Template(r"tpl1663662505106.png", record_pos=(0.003, 0.306), resolution=(1080, 1920))
     cross = Template(r"tpl1663662652124.png", record_pos=(0.286, -0.278), resolution=(1080, 1920))
     play_market_logo = Template(r"tpl1663663120655.png", record_pos=(-0.272, -0.788), resolution=(1080, 1920))
+    play_market_without_net = Template(r"tpl1666089609164.png", record_pos=(-0.005, -0.556), resolution=(1080, 1920))
+
     archery_stor_logo = Template(r"tpl1664278090751.png", record_pos=(-0.1, -0.687), resolution=(1080, 1920))
 
     play_market_back = Template(r"tpl1663663246685.png", record_pos=(-0.449, -0.794), resolution=(1080, 1920))

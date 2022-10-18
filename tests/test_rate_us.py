@@ -77,12 +77,23 @@ def check_main_page(): # Проверка нахождения в гл. меню
 
 def rate_us_test_5():
     sleep(5.0)
-    wait(RateUsLocators.play_market_logo)
-    assert_exists(RateUsLocators.archery_stor_logo, "Check Archery Bations Page")
-    sleep(3.0)
-    touch(RateUsLocators.play_market_back)
-    sleep(3.0)
-    key_back()
+    status_with_net = exists(RateUsLocators.play_market_logo)
+    print(status_with_net)
+    status_without_net = exists(RateUsLocators.play_market_without_net)
+    print(status_without_net)
+    if status_with_net == (246, 109):
+        assert_exists(RateUsLocators.archery_stor_logo, "Check Archery Bations Page")
+        sleep(3.0)
+        touch(RateUsLocators.play_market_back)
+        sleep(3.0)
+        #print("With net")
+        key_back()
+    else:
+        sleep(3.0)
+        key_back()
+        sleep(3.0)
+        #print("Without net")
+
 
     
 def rateus_do():
@@ -127,7 +138,6 @@ def start_test_rateus():
     #stop_app("com.bastion.archers")
     
 #start_test_rateus() # Manual start test
-
 # generate html report
 # from airtest.report.report import simple_report
 # simple_report(__file__, logpath=True)
