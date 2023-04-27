@@ -2,6 +2,6 @@
 /shelf/
 /workspace.xml
 /.git
-/tests/log
-/locators/log
-/core/log
+/tests/log/*
+/locators/log/*
+/core/log/*
