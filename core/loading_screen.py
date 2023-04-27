@@ -14,6 +14,7 @@ if not cli_setup():
 
 
 def check_loading_screen():
+    wait(CommonLocators.loading_screen)
     currently_status = assert_exists(CommonLocators.loading_screen)
     if currently_status == (545, 1659):
         pass
