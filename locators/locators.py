@@ -52,8 +52,10 @@ class CleanDataLocators:
 
     # Cleen Data
     about_icon_archery_button = Template(r"tpl1662490950156.png", record_pos=(0.163, -0.238), resolution=(1080, 1920)) # О приложении 
-    storage_button = Template(r"tpl1662491095400.png", record_pos=(-0.257, -0.102), resolution=(1080, 1920)) # Хранилище
-    clean_storage_button = Template(r"tpl1662491235186.png", record_pos=(-0.176, -0.474), resolution=(1080, 1920)) # Очистить хранилище
+    storage_button = Template(r"tpl1682615479840.png", record_pos=(-0.311, -0.104), resolution=(540, 960))
+    clean_storage_button = Template(r"tpl1682615504924.png", record_pos=(-0.189, -0.48), resolution=(540, 960))
+    storage_button_ru = Template(r"tpl1662491095400.png", record_pos=(-0.257, -0.102), resolution=(1080, 1920)) # Хранилище
+    clean_storage_button_ru = Template(r"tpl1662491235186.png", record_pos=(-0.176, -0.474), resolution=(1080, 1920)) # Очистить хранилище
     ok_button = Template(r"tpl1662491300727.png", record_pos=(0.296, 0.144), resolution=(1080, 1920)) # OK
     back_button = Template(r"tpl1662491358519.png", record_pos=(-0.449, -0.792), resolution=(1080, 1920)) # Стрелочка назад
     
