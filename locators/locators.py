@@ -8,15 +8,23 @@ class CommonLocators:
     icon_archery = Template(r"tpl1662490750512.png", record_pos=(0.079, -0.039), resolution=(1080, 1920)) # Иконка Лучники
     play_level_button = Template(r"tpl1662728980111.png", record_pos=(0.057, 0.236), resolution=(1080, 1920)) # Play Level button
     setting_button = Template(r"tpl1662729047792.png", record_pos=(-0.433, -0.766), resolution=(1080, 1920))
+    ok_button_settings = Template(r"tpl1677092583332.png", record_pos=(0.011, 0.252), resolution=(1080, 1920))
+    privacy_settings_button = Template(r"tpl1677093128248.png", record_pos=(0.015, -0.195), resolution=(1080, 1920))
+
     ingame_back_button = Template(r"tpl1662732056529.png", record_pos=(-0.005, 0.206), resolution=(1080, 1920))
     ingame_restart_button = Template(r"tpl1662732103721.png", record_pos=(0.003, 0.35), resolution=(1080, 1920))
+    ingame_defeat_icon = Template(r"tpl1676245015046.png", record_pos=(-0.003, -0.163), resolution=(1080, 1920))
     upgrade_army_active = Template(r"tpl1662730900577.png", record_pos=(-0.286, 0.458), resolution=(1080, 1920))
-    upgrade_army_unactive = Template(r"tpl1662731151771.png", record_pos=(-0.29, 0.459), resolution=(1080, 1920))
-    upgrade_gear_active = Template(r"tpl1662731018184.png", record_pos=(-0.05, 0.459), resolution=(1080, 1920))
-    upgrade_gear_unactive = Template(r"tpl1662731099217.png", record_pos=(-0.052, 0.462), resolution=(1080, 1920))
-    upgrade_castle_active = Template(r"tpl1662731040350.png", record_pos=(0.201, 0.461), resolution=(1080, 1920))
-    upgrade_castle_unactive = Template(r"tpl1662731084175.png", record_pos=(0.203, 0.461), resolution=(1080, 1920))
+    upgrade_army_disactive = Template(r"tpl1662731151771.png", record_pos=(-0.29, 0.459), resolution=(1080, 1920))
     
+    upgrade_gear_active = Template(r"tpl1662731018184.png", record_pos=(-0.05, 0.459), resolution=(1080, 1920))
+    upgrade_gear_disactive = Template(r"tpl1662731099217.png", record_pos=(-0.052, 0.462), resolution=(1080, 1920))
+    
+    upgrade_castle_active = Template(r"tpl1662731040350.png", record_pos=(0.201, 0.461), resolution=(1080, 1920))
+    upgrade_castle_disactive = Template(r"tpl1662731084175.png", record_pos=(0.203, 0.461), resolution=(1080, 1920))
+    loading_screen = Template(r"tpl1670454389916.png", record_pos=(0.005, 0.646), resolution=(1080, 1920))
+
+
     
 class CoreGameLocators:
     
@@ -71,7 +79,7 @@ class GDPRLocators:
     
     # GDPR
     logo_azurgames = Template(r"tpl1662714601964.png", record_pos=(-0.006, -0.327), resolution=(1080, 1920)) # Лого AzurGames Нужно будет потом добавить проверку на нгаличие этого лого
-    terms_button = Template(r"tpl1662715762815.png", record_pos=(-0.003, 0.022), resolution=(1080, 1920)) # Terms of Servise button
+    terms_button = Template(r"tpl1682597284720.png", record_pos=(-0.002, 0.013), resolution=(540, 960)) # Terms of Servise button
     privacy_button = Template(r"tpl1662715779089.png", record_pos=(-0.002, 0.094), resolution=(1080, 1920)) # Privacy Policy button
     terms_and_privacy_link = Template(r"tpl1662718230644.png", record_pos=(-0.208, -0.795), resolution=(1080, 1920)) # Terms of Servise link
     accept_gdpr_button = Template(r"tpl1662715786685.png", record_pos=(-0.003, 0.406), resolution=(1080, 1920)) # ACCEPT
@@ -84,7 +92,8 @@ class RateUsLocators:
     logo_rate_us = Template(r"tpl1663606776156.png", record_pos=(-0.002, -0.211), resolution=(1080, 1920)) # Надпись Rate us
     submit_button_active  = Template(r"tpl1664295992133.png", record_pos=(-0.008, 0.305), resolution=(1080, 1920)) # Кнопка Submit
     submit_button_nonactive = Template(r"tpl1663662505106.png", record_pos=(0.003, 0.306), resolution=(1080, 1920))
-    cross = Template(r"tpl1663662652124.png", record_pos=(0.286, -0.278), resolution=(1080, 1920))
+    cross = Template(r"tpl1668430558175.png", record_pos=(0.287, -0.274), resolution=(1080, 1920))
+
     play_market_logo = Template(r"tpl1663663120655.png", record_pos=(-0.272, -0.788), resolution=(1080, 1920))
     play_market_without_net = Template(r"tpl1666089609164.png", record_pos=(-0.005, -0.556), resolution=(1080, 1920))
 
@@ -122,5 +131,13 @@ class PopupTrollLocators:
     cross_popup_button = Template(r"tpl1665507692457.png", record_pos=(-0.432, -0.767), resolution=(1080, 1920))
 
 
+class AdsLocators:
+    #interstisial
+    
+    #reward
+    
+    #banner
+    place_ads_banner = Template(r"tpl1668166570826.png", record_pos=(-0.005, 0.827), resolution=(1080, 1920))
 
-
+    #openapp
+    
