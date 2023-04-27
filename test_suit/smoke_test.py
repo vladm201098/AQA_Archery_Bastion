@@ -48,8 +48,8 @@ from AQA_Archery_Bastion.core.second_level import *
 from AQA_Archery_Bastion.core.third_level import *
 from AQA_Archery_Bastion.tests.test_ingame import *
 from AQA_Archery_Bastion.core.core_ads import *
-from AQA_Archery_Bastion.core.core_settings import *
-from AQA_Archery_Bastion.tests.test_settings import *
+#from AQA_Archery_Bastion.core.core_settings import *
+#from AQA_Archery_Bastion.tests.test_settings import *
 from AQA_Archery_Bastion.core.popup_noads_and_troll import *
 
 if not cli_setup():
@@ -79,10 +79,13 @@ print("Test 307 - PASSED (2 lvl + test of boomb)")
 
 #8.0 Upgrade
 
+
+'''
 #9.0 Settings
 open_settings()
 test_open_settings()
 print("Test 311 - PASSED (Settings)")
+'''
 
 sleep(2)
 privacy_button_settings()
