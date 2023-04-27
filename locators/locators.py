@@ -51,9 +51,11 @@ class CleanDataLocators:
 
 
     # Cleen Data
-    about_icon_archery_button = Template(r"tpl1662490950156.png", record_pos=(0.163, -0.238), resolution=(1080, 1920)) # О приложении 
+    
+    about_icon_archery_button = Template(r"tpl1682623433802.png", record_pos=(-0.164, -0.239), resolution=(1080, 1920))
     storage_button = Template(r"tpl1682615479840.png", record_pos=(-0.311, -0.104), resolution=(540, 960))
     clean_storage_button = Template(r"tpl1682615504924.png", record_pos=(-0.189, -0.48), resolution=(540, 960))
+    about_icon_archery_button_ru = Template(r"tpl1662490950156.png", record_pos=(0.163, -0.238), resolution=(1080, 1920)) # О приложении 
     storage_button_ru = Template(r"tpl1662491095400.png", record_pos=(-0.257, -0.102), resolution=(1080, 1920)) # Хранилище
     clean_storage_button_ru = Template(r"tpl1662491235186.png", record_pos=(-0.176, -0.474), resolution=(1080, 1920)) # Очистить хранилище
     ok_button = Template(r"tpl1662491300727.png", record_pos=(0.296, 0.144), resolution=(1080, 1920)) # OK
@@ -81,7 +83,7 @@ class GDPRLocators:
     
     # GDPR
     logo_azurgames = Template(r"tpl1662714601964.png", record_pos=(-0.006, -0.327), resolution=(1080, 1920)) # Лого AzurGames Нужно будет потом добавить проверку на нгаличие этого лого
-    terms_button = Template(r"tpl1682597284720.png", record_pos=(-0.002, 0.013), resolution=(540, 960)) # Terms of Servise button
+    terms_button = Template(r"tpl1682616818862.png", record_pos=(-0.002, 0.013), resolution=(540, 960)) # Terms of Servise button
     privacy_button = Template(r"tpl1662715779089.png", record_pos=(-0.002, 0.094), resolution=(1080, 1920)) # Privacy Policy button
     terms_and_privacy_link = Template(r"tpl1662718230644.png", record_pos=(-0.208, -0.795), resolution=(1080, 1920)) # Terms of Servise link
     accept_gdpr_button = Template(r"tpl1662715786685.png", record_pos=(-0.003, 0.406), resolution=(1080, 1920)) # ACCEPT
@@ -99,7 +101,8 @@ class RateUsLocators:
     play_market_logo = Template(r"tpl1663663120655.png", record_pos=(-0.272, -0.788), resolution=(1080, 1920))
     play_market_without_net = Template(r"tpl1666089609164.png", record_pos=(-0.005, -0.556), resolution=(1080, 1920))
 
-    archery_stor_logo = Template(r"tpl1664278090751.png", record_pos=(-0.1, -0.687), resolution=(1080, 1920))
+    archery_stor_logo = Template(r"tpl1682621964876.png", record_pos=(-0.094, -0.687), resolution=(540, 960))
+
 
     play_market_back = Template(r"tpl1663663246685.png", record_pos=(-0.449, -0.794), resolution=(1080, 1920))
 
