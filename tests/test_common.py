@@ -18,7 +18,7 @@ def test_common():
     print("Test 503 - PASSED (Data clean is done)")
     sleep(15.0)
     touch(CommonLocators.icon_archery)
-    sleep(5.0)
+    sleep(15.0)
     check_loading_screen()
     print("Test 300 - PASSED (Loading screen)")
     sleep(15.0)
