@@ -56,9 +56,13 @@ def test_gdpr_settings():
     gdpr_window()
     touch_terms_button()
     check_link_terms()
+    key_back()
+    key_back()
     gdpr_window()
     touch_privacy_button()
     check_link_privacy()
+    key_back()
+    key_back()
     touch_accept_button()
     
 #start_test_gdpr() # Manual start test
