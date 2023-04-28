@@ -8,12 +8,15 @@ class CommonLocators:
     icon_archery = Template(r"tpl1662490750512.png", record_pos=(0.079, -0.039), resolution=(1080, 1920)) # Иконка Лучники
     play_level_button = Template(r"tpl1662728980111.png", record_pos=(0.057, 0.236), resolution=(1080, 1920)) # Play Level button
     setting_button = Template(r"tpl1662729047792.png", record_pos=(-0.433, -0.766), resolution=(1080, 1920))
-    ok_button_settings = Template(r"tpl1677092583332.png", record_pos=(0.011, 0.252), resolution=(1080, 1920))
-    privacy_settings_button = Template(r"tpl1677093128248.png", record_pos=(0.015, -0.195), resolution=(1080, 1920))
+    ok_button_settings = Template(r"tpl1682675432460.png", record_pos=(0.013, 0.245), resolution=(1080, 1920))
+
+    privacy_settings_button = Template(r"tpl1682675451728.png", record_pos=(-0.017, -0.195), resolution=(1080, 1920))
+
 
     ingame_back_button = Template(r"tpl1662732056529.png", record_pos=(-0.005, 0.206), resolution=(1080, 1920))
     ingame_restart_button = Template(r"tpl1662732103721.png", record_pos=(0.003, 0.35), resolution=(1080, 1920))
-    ingame_defeat_icon = Template(r"tpl1676245015046.png", record_pos=(-0.003, -0.163), resolution=(1080, 1920))
+    ingame_defeat_icon = Template(r"tpl1682675192208.png", record_pos=(-0.003, -0.164), resolution=(1080, 1920))
+
     upgrade_army_active = Template(r"tpl1662730900577.png", record_pos=(-0.286, 0.458), resolution=(1080, 1920))
     upgrade_army_disactive = Template(r"tpl1662731151771.png", record_pos=(-0.29, 0.459), resolution=(1080, 1920))
     
@@ -96,17 +99,13 @@ class RateUsLocators:
     logo_rate_us = Template(r"tpl1663606776156.png", record_pos=(-0.002, -0.211), resolution=(1080, 1920)) # Надпись Rate us
     submit_button_active  = Template(r"tpl1664295992133.png", record_pos=(-0.008, 0.305), resolution=(1080, 1920)) # Кнопка Submit
     submit_button_nonactive = Template(r"tpl1663662505106.png", record_pos=(0.003, 0.306), resolution=(1080, 1920))
-    cross = Template(r"tpl1668430558175.png", record_pos=(0.287, -0.274), resolution=(1080, 1920))
+    cross = Template(r"tpl1682675501550.png", record_pos=(0.285, -0.278), resolution=(1080, 1920))
 
     play_market_logo = Template(r"tpl1663663120655.png", record_pos=(-0.272, -0.788), resolution=(1080, 1920))
     play_market_without_net = Template(r"tpl1666089609164.png", record_pos=(-0.005, -0.556), resolution=(1080, 1920))
 
     archery_stor_logo = Template(r"tpl1682621964876.png", record_pos=(-0.094, -0.687), resolution=(540, 960))
-
-
     play_market_back = Template(r"tpl1663663246685.png", record_pos=(-0.449, -0.794), resolution=(1080, 1920))
-
-
     rate_us_5 = Template(r"tpl1664284721163.png", record_pos=(0.16, 0.019), resolution=(1080, 1920))
     rate_us_4 = Template(r"tpl1664284685358.png", record_pos=(0.08, 0.02), resolution=(1080, 1920))
     rate_us_3 = Template(r"tpl1664284666300.png", record_pos=(-0.001, 0.019), resolution=(1080, 1920))
@@ -142,7 +141,8 @@ class AdsLocators:
     #reward
     
     #banner
-    place_ads_banner = Template(r"tpl1668166570826.png", record_pos=(-0.005, 0.827), resolution=(1080, 1920))
+    place_ads_banner = Template(r"tpl1682675639270.png", record_pos=(0.002, 0.84), resolution=(1080, 1920))
+
 
     #openapp
     
