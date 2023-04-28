@@ -17,6 +17,7 @@ from airtest.cli.parser import cli_setup
 from AQA_Archery_Bastion.core.core_ingame import *
 from AQA_Archery_Bastion.locators.locators import *
 from AQA_Archery_Bastion.core.core_debug import *
+from AQA_Archery_Bastion.core.first_level import *
 
 
 if not cli_setup():
