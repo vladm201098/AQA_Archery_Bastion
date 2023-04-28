@@ -8,11 +8,13 @@ class CommonLocators:
     icon_archery = Template(r"tpl1662490750512.png", record_pos=(0.079, -0.039), resolution=(1080, 1920)) # Иконка Лучники
     play_level_button = Template(r"tpl1662728980111.png", record_pos=(0.057, 0.236), resolution=(1080, 1920)) # Play Level button
     setting_button = Template(r"tpl1662729047792.png", record_pos=(-0.433, -0.766), resolution=(1080, 1920))
-    check_box_sound = Template(r"tpl1682696698977.png", record_pos=(-0.152, -0.098), resolution=(1080, 1920))
+    check_box_sound_fill = Template(r"tpl1682696698977.png", record_pos=(-0.152, -0.098), resolution=(1080, 1920))
+    check_box_music_fill = Template(r"tpl1682696715499.png", record_pos=(-0.152, 0.001), resolution=(1080, 1920))
+    check_box_vibration_fill = Template(r"tpl1682696723656.png", record_pos=(-0.151, 0.093), resolution=(1080, 1920))
+    check_box_sound_empty = Template(r"tpl1682699127157.png", record_pos=(-0.152, -0.098), resolution=(1080, 1920))
+    check_box_music_empty = Template(r"tpl1682699137538.png", record_pos=(-0.152, 0.001), resolution=(1080, 1920))
+    check_box_vibration_empty = Template(r"tpl1682699147541.png", record_pos=(-0.151, 0.098), resolution=(1080, 1920))
 
-    check_box_music = Template(r"tpl1682696715499.png", record_pos=(-0.152, 0.001), resolution=(1080, 1920))
-
-    check_box_vibration = Template(r"tpl1682696723656.png", record_pos=(-0.151, 0.093), resolution=(1080, 1920))
 
     privacy_settings_button = Template(r"tpl1682675451728.png", record_pos=(-0.017, -0.195), resolution=(1080, 1920))
     ok_button_settings = Template(r"tpl1682675432460.png", record_pos=(0.013, 0.245), resolution=(1080, 1920))
