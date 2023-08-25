@@ -61,13 +61,16 @@ class CleanDataLocators:
     # Cleen Data
     
     about_icon_archery_button = Template(r"tpl1682623433802.png", record_pos=(-0.164, -0.239), resolution=(1080, 1920))
-    storage_button = Template(r"tpl1682615479840.png", record_pos=(-0.311, -0.104), resolution=(540, 960))
-    clean_storage_button = Template(r"tpl1682615504924.png", record_pos=(-0.189, -0.48), resolution=(540, 960))
+    storage_button = Template(r"tpl1684957962711.png", record_pos=(-0.313, 0.255), resolution=(1080, 1920))
+
+    clean_storage_button = Template(r"tpl1684957762590.png", record_pos=(-0.24, -0.153), resolution=(1080, 1920))
+
     about_icon_archery_button_ru = Template(r"tpl1662490950156.png", record_pos=(0.163, -0.238), resolution=(1080, 1920)) # О приложении 
     storage_button_ru = Template(r"tpl1662491095400.png", record_pos=(-0.257, -0.102), resolution=(1080, 1920)) # Хранилище
     clean_storage_button_ru = Template(r"tpl1662491235186.png", record_pos=(-0.176, -0.474), resolution=(1080, 1920)) # Очистить хранилище
-    ok_button = Template(r"tpl1662491300727.png", record_pos=(0.296, 0.144), resolution=(1080, 1920)) # OK
-    back_button = Template(r"tpl1662491358519.png", record_pos=(-0.449, -0.792), resolution=(1080, 1920)) # Стрелочка назад
+    ok_button = Template(r"tpl1684958052279.png", record_pos=(0.298, 0.13), resolution=(1080, 1920)) # OK
+    back_button = Template(r"tpl1684958071846.png", record_pos=(-0.448, -0.794), resolution=(1080, 1920))
+ # Стрелочка назад
     
 
 class DebaggerLocators:    
@@ -80,21 +83,27 @@ class DebaggerLocators:
     debug_button = Template(r"tpl1662719272821.png", record_pos=(0.405, -0.231), resolution=(1080, 1920))
     showgdpr = Template(r"tpl1662731343803.png", record_pos=(-0.117, -0.753), resolution=(1080, 1920))
     prev_level_button = Template(r"tpl1662731218931.png", record_pos=(-0.118, -0.654), resolution=(1080, 1920))
-    debug_lose_button = Template(r"tpl1662731279071.png", record_pos=(-0.119, -0.544), resolution=(1080, 1920))
+    debug_lose_button = Template(r"tpl1685013097959.png", record_pos=(-0.113, -0.549), resolution=(1080, 1920))
+    debug_lose_button_old = Template(r"tpl1662731279071.png", record_pos=(-0.119, -0.544), resolution=(1080, 1920))
     debug_win_button = Template(r"tpl1662731310721.png", record_pos=(-0.115, -0.444), resolution=(1080, 1920))
     add_bomb_button = Template(r"tpl1662731495438.png", record_pos=(-0.128, 0.073), resolution=(1080, 1920))
     debug_money_button = Template(r"tpl1662731400113.png", record_pos=(-0.119, 0.179), resolution=(1080, 1920))
-    rate_us_button = Template(r"tpl1662731413182.png", record_pos=(-0.115, 0.285), resolution=(1080, 1920))
+    rate_us_button = Template(r"tpl1685050916219.png", record_pos=(-0.113, 0.594), resolution=(1080, 1920))
 
+    
+    icon_debug_reporter = Template(r"tpl1684411155924.png", record_pos=(0.35, -0.691), resolution=(1080, 1920))
+    close_debug_reporter = Template(r"tpl1684415066274.png", record_pos=(0.409, -0.837), resolution=(1080, 1920))
+    field_in_debug_reporter = Template(r"tpl1684427950829.png", record_pos=(-0.098, -0.055), resolution=(1080, 1920))
 
+    
 class GDPRLocators:    
     
     # GDPR
     logo_azurgames = Template(r"tpl1662714601964.png", record_pos=(-0.006, -0.327), resolution=(1080, 1920)) # Лого AzurGames Нужно будет потом добавить проверку на нгаличие этого лого
-    terms_button = Template(r"tpl1682616818862.png", record_pos=(-0.002, 0.013), resolution=(540, 960)) # Terms of Servise button
-    privacy_button = Template(r"tpl1662715779089.png", record_pos=(-0.002, 0.094), resolution=(1080, 1920)) # Privacy Policy button
+    terms_button = Template(r"tpl1691150430372.png", record_pos=(0.0, -0.067), resolution=(1080, 1920)) # Terms of Servise button
+    privacy_button = Template(r"tpl1691150450267.png", record_pos=(0.003, 0.067), resolution=(1080, 1920)) # Privacy Policy button
     terms_and_privacy_link = Template(r"tpl1662718230644.png", record_pos=(-0.208, -0.795), resolution=(1080, 1920)) # Terms of Servise link
-    accept_gdpr_button = Template(r"tpl1662715786685.png", record_pos=(-0.003, 0.406), resolution=(1080, 1920)) # ACCEPT
+    accept_gdpr_button = Template(r"tpl1691150800505.png", record_pos=(0.001, 0.42), resolution=(1080, 1920)) # ACCEPT
 
 
 class RateUsLocators:
@@ -102,7 +111,7 @@ class RateUsLocators:
     #Rate US
     
     logo_rate_us = Template(r"tpl1663606776156.png", record_pos=(-0.002, -0.211), resolution=(1080, 1920)) # Надпись Rate us
-    submit_button_active  = Template(r"tpl1664295992133.png", record_pos=(-0.008, 0.305), resolution=(1080, 1920)) # Кнопка Submit
+    submit_button_active  = Template(r"tpl1685051014983.png", record_pos=(-0.007, 0.305), resolution=(1080, 1920)) # Кнопка Submit
     submit_button_nonactive = Template(r"tpl1663662505106.png", record_pos=(0.003, 0.306), resolution=(1080, 1920))
     cross = Template(r"tpl1682675501550.png", record_pos=(0.285, -0.278), resolution=(1080, 1920))
 
@@ -114,7 +123,7 @@ class RateUsLocators:
     rate_us_5 = Template(r"tpl1664284721163.png", record_pos=(0.16, 0.019), resolution=(1080, 1920))
     rate_us_4 = Template(r"tpl1664284685358.png", record_pos=(0.08, 0.02), resolution=(1080, 1920))
     rate_us_3 = Template(r"tpl1664284666300.png", record_pos=(-0.001, 0.019), resolution=(1080, 1920))
-    rate_us_2 = Template(r"tpl1664284646073.png", record_pos=(-0.081, 0.019), resolution=(1080, 1920))
+    rate_us_2 = Template(r"tpl1685047119651.png", record_pos=(-0.081, 0.018), resolution=(1080, 1920))
     rate_us_1 = Template(r"tpl1664282577580.png", record_pos=(-0.162, 0.016), resolution=(1080, 1920))
     
 
@@ -151,3 +160,5 @@ class AdsLocators:
 
     #openapp
     
+
+

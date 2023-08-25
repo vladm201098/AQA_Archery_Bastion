@@ -11,19 +11,23 @@ if not cli_setup():
 
     
 def setting_ingame_button():
+    sleep(2)
     touch(CoreGameLocators.setting_ingame_button)
     
     
 def restart_ingame_button():
+    sleep(2)
     touch(CoreGameLocators.restart_ingame_button)
     
 
 def menu_ingame_button():
+    sleep(2)
     touch(CoreGameLocators.menu_ingame_button)    
 
     
 def debug_lose_button():
-    touch(DebaggerLocators.debug_lose_button)
+    sleep(2)
+    touch(DebaggerLocators.debug_lose_button, duration = 1)
     
     
 #restart_ingame_button()

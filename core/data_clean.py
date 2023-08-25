@@ -8,7 +8,7 @@ from AQA_Archery_Bastion.locators.locators import *
 
 
 if not cli_setup():
-    auto_setup(__file__, logdir=True, devices=["android://127.0.0.1:5037/127.0.0.1:62025?cap_method=MINICAP&&ori_method=MINICAPORI&&touch_method=MINITOUCH",])
+    auto_setup(__file__, logdir=True, devices=["android://?cap_method=MINICAP&&ori_method=MINICAPORI&&touch_method=MINITOUCH",])
 
 def start_data_clean():
     

@@ -21,7 +21,8 @@ from AQA_Archery_Bastion.core.first_level import *
 
 
 if not cli_setup():
-    auto_setup(__file__, logdir=None, devices=["Android:///",], project_root="C:/Users/Vladislav/Downloads/AirtestIDE/AirtestIDE/AQA_Archery_Bastion")
+    auto_setup(__file__, logdir=True, devices=["android://127.0.0.1:5037/127.0.0.1:62025?cap_method=MINICAP&&ori_method=MINICAPORI&&touch_method=MINITOUCH",])
+
 
     
 #Restart -302
@@ -85,6 +86,7 @@ def lose_menu_ingame():
     debug_lose_button()
     open_or_closed_debug() # /Закрытие дебаггера
     try_again_defeat_test() # тест на то что есть кнопка Defeat
+    sleep(2)
     menu_ingame_button()
     lose_menu_test() # тест на то что есть кнопка play
     #print("Test 305 - PASSED (Lose - Menu)")
@@ -103,8 +105,6 @@ def win_ingame():
 #restart_level_ingame() #Manual start 
 #restart_level_test()
 #menu_level_ingame()
-
-
 
 
 

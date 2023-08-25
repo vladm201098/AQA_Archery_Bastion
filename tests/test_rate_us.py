@@ -4,6 +4,7 @@ __author__ = "Vladislav"
 from airtest.core.api import *
 from airtest.cli.parser import cli_setup
 from AQA_Archery_Bastion.locators.locators import *
+#from AQA_Archery_Bastion.core.core_debug import *
 from airtest.core.android.touch_methods.base_touch import *
 
 
@@ -53,23 +54,29 @@ def open_rate_us_window(): # Открытие окна Rate US
     touch(DebaggerLocators.rate_us_button)
     
 def rating_one(): # 1 star
+    sleep(2.0)
     touch(RateUsLocators.rate_us_1)
 
 def rating_two(): # 2 stars   
+    sleep(2.0)
     touch(RateUsLocators.rate_us_2)
     
 def rating_tree(): # 3 stars
+    sleep(2.0)
     touch(RateUsLocators.rate_us_3)     
     
 def rating_four(): # 4 stars
+    sleep(2.0)
     touch(RateUsLocators.rate_us_4)    
 
 def rating_five(): # 5 stars
+    sleep(2.0)
     touch(RateUsLocators.rate_us_5)
     
 def touch_submit():
+    sleep(5.0)
     touch(RateUsLocators.submit_button_active)
-    sleep(3.0)
+    sleep(5.0)
     
 def check_main_page(): # Проверка нахождения в гл. меню
     assert_exists(CommonLocators.play_level_button," Check main page")
@@ -100,7 +107,7 @@ def rateus_do():
     open_or_closed_debug()
     sleep(2.0)
     open_rate_us_window()
-    sleep(2.0)
+    sleep(3.0)
     open_or_closed_debug()
     sleep(2.0)
 
