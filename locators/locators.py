@@ -7,6 +7,8 @@ class CommonLocators:
     # Common
     icon_archery = Template(r"tpl1662490750512.png", record_pos=(0.079, -0.039), resolution=(1080, 1920)) # Иконка Лучники
     play_level_button = Template(r"tpl1662728980111.png", record_pos=(0.057, 0.236), resolution=(1080, 1920)) # Play Level button
+    play_level_button_new_ui = Template(r"tpl1692969510764.png", record_pos=(0.072, 0.281), resolution=(1080, 1920))
+
     setting_button = Template(r"tpl1662729047792.png", record_pos=(-0.433, -0.766), resolution=(1080, 1920))
     check_box_sound_fill = Template(r"tpl1682696698977.png", record_pos=(-0.152, -0.098), resolution=(1080, 1920))
     check_box_music_fill = Template(r"tpl1682696715499.png", record_pos=(-0.152, 0.001), resolution=(1080, 1920))
@@ -47,6 +49,9 @@ class CoreGameLocators:
     restart_ingame_icon = Template(r"tpl1664377852385.png", record_pos=(-0.006, -0.247), resolution=(1080, 1920))
     menu_ingame_button = Template(r"tpl1664377886739.png", record_pos=(-0.007, 0.202), resolution=(1080, 1920))
     cross_ingame_button = Template(r"tpl1664378109082.png", record_pos=(-0.438, -0.754), resolution=(1080, 1920))
+    
+    troll_in_balloon = Template(r"tpl1692999999424.png", record_pos=(-0.055, -0.4), resolution=(1080, 1920))
+
 
 
 
@@ -160,5 +165,66 @@ class AdsLocators:
 
     #openapp
     
+
+class NewUILocators:
+    shop_button = Template(r"tpl1692969810376.png", record_pos=(-0.419, 0.813), resolution=(1080, 1920))
+
+
+    heroes_button = Template(r"tpl1692972555712.png", record_pos=(-0.101, 0.806), resolution=(1080, 1920))
+
+
+    
+    battle_button = Template(r"tpl1692972942363.png", record_pos=(0.079, 0.801), resolution=(1080, 1920))
+
+
+
+    
+    gods_button = Template(r"tpl1692972966210.png", record_pos=(0.238, 0.809), resolution=(1080, 1920))
+
+
+    
+    skin_button = Template(r"tpl1692972999497.png", record_pos=(0.415, 0.816), resolution=(1080, 1920))
+
+    
+
+
+class ShopLocators:
+    sell_store = Template(r"tpl1692996060006.png", record_pos=(-0.001, -0.798), resolution=(1080, 1920))
+    no_ads_button_in_shop = Template(r"tpl1692996596582.png", record_pos=(-0.019, -0.595), resolution=(1080, 1920))
+    #buy_merlin_button_in_shop = 
+    #buy_storm_button_in_shop = 
+    #buy_kartos_button_in_shop = 
+    #buy_frost_button_in_shop =
+    #buy_troll_button_in_shop = 
+    
+    daily_offers = Template(r"tpl1692996099861.png", record_pos=(0.002, -0.627), resolution=(1080, 1920)) # Airtest находит картинку , даже если она находятся за пределами выбранной зоны - т.е. находит если она  есть на экране
+    get_coins_free = Template(r"tpl1692997356522.png", record_pos=(-0.316, -0.086), resolution=(1080, 1920))
+    get_tokens_free = Template(r"tpl1692997389395.png", record_pos=(-0.005, -0.072), resolution=(1080, 1920))
+    get_bombs_free = Template(r"tpl1692997422858.png", record_pos=(0.312, -0.081), resolution=(1080, 1920))
+    
+    hero_tokens = Template(r"tpl1692996323860.png", record_pos=(0.004, -0.262), resolution=(1080, 1920))
+    buy_100_tokens = Template(r"tpl1692997465159.png", record_pos=(-0.338, 0.401), resolution=(1080, 1920))
+    buy_1000_tokens = Template(r"tpl1692997489249.png", record_pos=(-0.119, 0.397), resolution=(1080, 1920))
+    buy_5000_tokens = Template(r"tpl1692997512134.png", record_pos=(0.112, 0.401), resolution=(1080, 1920))
+    buy_20000_tokens = Template(r"tpl1692997536180.png", record_pos=(0.342, 0.402), resolution=(1080, 1920))
+
+    golds = Template(r"tpl1692996334061.png", record_pos=(0.0, 0.217), resolution=(1080, 1920))
+    buy_2000_coins = Template(r"tpl1692997616220.png", record_pos=(-0.346, 0.408), resolution=(1080, 1920))
+    buy_10000_coins = Template(r"tpl1692997638719.png", record_pos=(-0.12, 0.413), resolution=(1080, 1920))
+    buy_50000_coins = Template(r"tpl1692997662152.png", record_pos=(0.115, 0.414), resolution=(1080, 1920))
+    buy_120000_coins = Template(r"tpl1692997687628.png", record_pos=(0.344, 0.42), resolution=(1080, 1920))
+
+
+class TawernLocators:
+    pass
+
+
+class GodsLocators:
+    pass
+
+
+class SkinLocators:
+    castle_units = Template(r"tpl1692997754815.png", record_pos=(-0.001, -0.54), resolution=(1080, 1920))
+    select_button = Template(r"tpl1692997785942.png", record_pos=(0.005, 0.538), resolution=(1080, 1920))
 
 
