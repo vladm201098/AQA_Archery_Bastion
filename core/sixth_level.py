@@ -14,18 +14,20 @@ def sixth_level():
     y = 0.145    
     sixth_play_level_button()
     sleep(6.0)
+    choise_free_troll_in_balloon()
+    sleep(6.0)
     strike_in_enemy(y)
     sleep(12.0)
     choise_bomb()
     sleep(4.0)
     strike_in_enemy(y + 0.0065)
     sleep(12.0)
-    strike_in_enemy(y + 0.0265)
+    strike_in_enemy(y + 0.0465)
     sleep(12.0)
     strike_in_enemy(y + 0.0065)
     sleep(5.0)
     success_finish_level()
-    print("Sixth level success finished")
+    #print("Sixth level success finished")
     
 #sixth_level()  #Manual start test
 
