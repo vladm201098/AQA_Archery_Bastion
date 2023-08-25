@@ -39,12 +39,16 @@ def sixth_play_level_button():
     
 def success_finish_level():
     touch(CoreGameLocators.continue_button)
-    
+  
+
 def choise_bomb():
     touch(CoreGameLocators.bobm_button)
   
 
+def choise_free_troll_in_balloon():
+    touch(CoreGameLocators.troll_in_balloon)
 
+    
 # generate html report
 # from airtest.report.report import simple_report
 # simple_report(__file__, logpath=True) а
