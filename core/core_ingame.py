@@ -27,7 +27,7 @@ def menu_ingame_button():
     
 def debug_lose_button():
     sleep(2)
-    touch(DebaggerLocators.debug_lose_button, duration = 1)
+    touch(DebaggerLocators.debug_lose_button, duration = 1.5)
     
     
 #restart_ingame_button()
