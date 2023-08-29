@@ -29,11 +29,17 @@ def check_popup_troll():
     return currently_status
 
 
+def check_popup_merlin():
+    currently_status = exists(PopupMerlinLocators.mage_merlin)
+    return currently_status    
+
+
 def exit_popup_noads():
     status_popup = check_popup_noads()
     if status_popup==(537, 365):
         print("Window NO ADS is open")
         touch(PopupNoadsLocators.cross_popup_button)
+        
         
 def exit_popup_troll():
     status_popup = check_popup_troll()
@@ -42,11 +48,19 @@ def exit_popup_troll():
         touch(PopupTrollLocators.cross_popup_button)
 
         
+def exit_popup_merlin():
+    status_popup = exists(PopupMerlinLocators.mage_merlin)
+    if status_popup == check_popup_merlin():
+        touch(PopupMerlinLocators.cross_popup_button)
+        
+        
 #exit_popup_noads()     #Manual start test      
 #exit_popup_troll()     #Manual start test
+exit_popup_merlin()      #Manual start test
 
 #check_popup_noads()    #Manual start test 
 #check_popup_troll()    #Manual start test
+#check_popup_merlin()   #Manual start test
 
 # generate html report
 # from airtest.report.report import simple_report
