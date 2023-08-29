@@ -14,10 +14,12 @@ if not cli_setup():
 
     
 def test_common(): 
-    start_data_clean()
+    clear_app("com.bastion.archers")
+    #start_data_clean()
     print("Test 503 - PASSED (Data clean is done)")
-    sleep(15.0)
-    touch(CommonLocators.icon_archery)
+    sleep(5.0)
+    start_app("com.bastion.archers")
+    #touch(CommonLocators.icon_archery)
     sleep(15.0)
     check_loading_screen()
     print("Test 300 - PASSED (Loading screen)")
@@ -27,7 +29,8 @@ def test_common():
     sleep(5.0)
     start_test_rateus()
     print("Test 200-202 - PASSED (Testing rate US is done)")
-
+    
+    
 #test_common()
 # generate html report
 # from airtest.report.report import simple_report
