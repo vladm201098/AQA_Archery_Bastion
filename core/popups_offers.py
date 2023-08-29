@@ -56,7 +56,7 @@ def exit_popup_merlin():
         
 #exit_popup_noads()     #Manual start test      
 #exit_popup_troll()     #Manual start test
-exit_popup_merlin()      #Manual start test
+#exit_popup_merlin()      #Manual start test
 
 #check_popup_noads()    #Manual start test 
 #check_popup_troll()    #Manual start test
