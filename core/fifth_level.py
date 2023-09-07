@@ -12,7 +12,7 @@ if not cli_setup():
 
 def fifth_level():    
     y = 0.135    
-    fifth_play_level_button()
+    play_level_button()
     sleep(6.0)
     strike_in_enemy(y)
     sleep(12.0)
@@ -23,7 +23,7 @@ def fifth_level():
     strike_in_enemy(y + 0.0065)
     sleep(5.0)
     success_finish_level()
-    print("Fifth level success finished")
+    #print("Fifth level success finished")
     
 #fifth_level()  #Manual start test
 
