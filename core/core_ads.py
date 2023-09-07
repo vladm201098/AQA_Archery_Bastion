@@ -29,8 +29,8 @@ def check_ads_int():
         keyevent("Home")
         wait(CommonLocators.icon_archery, timeout = 30)
         touch(CommonLocators.icon_archery)
-        wait(CommonLocators.icon_archery, timeout = 30)
-    return
+        #wait(CommonLocators.icon_archery, timeout = 30)
+    #return
 
 
     
