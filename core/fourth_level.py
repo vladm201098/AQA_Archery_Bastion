@@ -12,7 +12,7 @@ if not cli_setup():
 
 def fourth_level():    
     y = 0.155    
-    fourth_play_level_button()
+    play_level_button()
     sleep(5.0)
     strike_in_enemy(y)
     sleep(12.0)
@@ -23,7 +23,7 @@ def fourth_level():
     strike_in_enemy(y + 0.0265)
     sleep(5.0)
     success_finish_level()
-    print("Fourth level success finished")
+    #print("Fourth level success finished")
     
 #fourth_level()  #Manual start test
 

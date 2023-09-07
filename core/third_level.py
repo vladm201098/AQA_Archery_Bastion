@@ -12,7 +12,7 @@ if not cli_setup():
 
 def third_level():    
     y = 0.155    
-    third_play_level_button()
+    play_level_button()
     sleep(5.0)
     strike_in_enemy(y)
     sleep(12.0)

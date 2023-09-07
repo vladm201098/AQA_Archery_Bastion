@@ -12,13 +12,13 @@ if not cli_setup():
 
 def sixth_level():    
     y = 0.145    
-    sixth_play_level_button()
+    play_level_button()
     sleep(6.0)
-    choise_free_troll_in_balloon()
+    check_available_button(CoreGameLocators.troll_in_balloon)
     sleep(6.0)
     strike_in_enemy(y)
     sleep(12.0)
-    choise_bomb()
+    check_available_button(CoreGameLocators.bobm_button)
     sleep(4.0)
     strike_in_enemy(y + 0.0065)
     sleep(12.0)

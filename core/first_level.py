@@ -13,14 +13,14 @@ if not cli_setup():
     
 def first_level():    
     y = 0.155    
-    first_play_level_button()
+    play_level_button()
     sleep(5.0)
     strike_in_enemy(y)
     sleep(12.0)
     strike_in_enemy(y + 0.0065)
     sleep(5.0)
     success_finish_level()
-    print("First level success finished")
+    #print("First level success finished")
     
 #first_level()   #Manual start test
 
