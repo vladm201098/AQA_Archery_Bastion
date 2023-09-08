@@ -22,10 +22,10 @@ if not cli_setup():
 def check_ads_int():
     sleep(15)
     check_value = exists(CommonLocators.play_level_button)
-    if check_value == (602, 1215):
-        print("There isn't interstisial ads")
+    if check_value:
+        print("There isn't inter ads")
     else:
-        print("There is interstisial ads")
+        print("There is inter ads")
         keyevent("Home")
         wait(CommonLocators.icon_archery, timeout = 30)
         touch(CommonLocators.icon_archery)
@@ -42,7 +42,8 @@ def check_ads_reward():
 #Banner
 def check_ads_banner():
     sleep(5)
-    check_value =exists(AdsLocators.place_ads_banner)
+    check_value = exists(AdsLocators.place_ads_banner)
+    print(check_value)
     if check_value == (519, 1854):
         print("There isn't banner ads")
     else:
@@ -51,7 +52,7 @@ def check_ads_banner():
     
 
 #check_ads_int()
-#check_ads_banner()
+check_ads_banner()
 #check_ads_openapp()
 
 
