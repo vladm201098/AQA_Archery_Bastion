@@ -8,51 +8,28 @@ from AQA_Archery_Bastion.locators.locators import *
 if not cli_setup():
     auto_setup(__file__, logdir=None, devices=["Android:///",], project_root="C:/Users/Vladislav/Downloads/AirtestIDE/AirtestIDE/AQA_Archery_Bastion")
 
+using("C:/Users/Vladislav/Downloads/AirtestIDE/AirtestIDE/AQA_Archery_Bastion/locators")
 
-def check_popup_noads():
-    currently_status = exists(PopupNoadsLocators.tired_of_ads)
-    return currently_status
-    
-
-def check_popup_troll():
-    currently_status = exists(PopupTrollLocators.master_troll)
-    return currently_status
-
-
-def check_popup_merlin():
-    currently_status = exists(PopupMerlinLocators.mage_merlin)
-    return currently_status    
-
-
-def exit_popup_noads():
-    if check_popup_noads():
-        print("Popup NO ADS is open")
-        touch(PopupNoadsLocators.cross_popup_button)
+def check_popup(locator):
+    return exists(locator)
+     
         
-        
-def exit_popup_troll():
-    if check_popup_troll():
-        print("Popup Troll is open")
-        touch(PopupTrollLocators.cross_popup_button)
+def exit_popup(locator,close_locator):
+    if check_popup(locator):
+        print(f"Popup {locator} is open")
+        if assert_exists(close_locator):
+            touch(close_locator)
+        else:
+            print('press claim')
+            #touch(PopupHeroesLocators.claim_button_odysseus)
 
-        
-def exit_popup_merlin():
-    if check_popup_merlin(): # в if достаточно состояния переменной для определения true/false. Доп условия дописывать не надо
-        print("Popup Merlin is open")
-        touch(PopupMerlinLocators.cross_popup_button)
-        
-'''
-def exit_popup(*args):
-    status_popup = exists(PopupMerlinLocators.args)
-    if status_popup: # в if достаточно состояния переменной для определения true/false. Доп условия дописывать не надо
-        print("Popup Merlin is open")
-        touch(PopupMerlinLocators.cross_popup_button)
-        
-'''        
-#exit_popup_noads()     #Manual start test
-#exit_popup_troll()     #Manual start test
-#exit_popup_merlin()
-#exit_popup(mage_merlin)    #Manual start test
+            
+exit_popup(PopupHeroesLocators.odysseus, PopupMerlinLocators.cross_popup_button)    #Manual start test
+exit_popup(PopupMerlinLocators.mage_merlin, PopupMerlinLocators.cross_popup_button)    #Manual start test
+exit_popup(PopupTrollLocators.master_troll, PopupMerlinLocators.cross_popup_button)
+exit_popup(PopupNoadsLocators.tired_of_ads, PopupMerlinLocators.cross_popup_button)
+exit_popup(PopupHeroesLocators.frost_ninja, PopupMerlinLocators.cross_popup_button)
+exit_popup(PopupNewUnitsLocators.get_new_units, PopupNewUnitsLocators.no_thanks)
 
 #check_popup_noads()    #Manual start test
 #check_popup_troll()    #Manual start test
