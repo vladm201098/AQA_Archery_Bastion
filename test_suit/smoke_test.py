@@ -31,6 +31,7 @@
 
 
 12.Основыне локации (по граничным значениям)
+
 13.Troll
 14.Store
 15. Heroes window's
@@ -53,12 +54,12 @@ from AQA_Archery_Bastion.tests.test_ingame import *
 from AQA_Archery_Bastion.core.core_ads import *
 from AQA_Archery_Bastion.core.core_settings import *
 from AQA_Archery_Bastion.tests.test_settings import *
-from AQA_Archery_Bastion.core.popup_noads_and_troll import *
+from AQA_Archery_Bastion.core.popups_offers import *
 
 if not cli_setup():
     auto_setup(__file__, logdir=None, devices=["Android:///",], project_root="C:/Users/Vladislav/Downloads/AirtestIDE/AirtestIDE/AQA_Archery_Bastion")
 
-
+'''
 #1.1-5 пункт
 test_common()
 
@@ -81,6 +82,7 @@ print("Test 306 - PASSED (Win)")
 #7.0 2 lvl Использование бустера(ов)
 second_level()
 print("Test 307 - PASSED (2 lvl + test of boomb)")
+exit_popup_merlin()
 
 #8.0 Upgrade
 
@@ -111,8 +113,9 @@ sleep(5)
 check_ads_int()
 sleep(5)
 exit_popup_noads()
+exit_popup_merlin()
 print("Test 315 - PASSED (3 lvl + offer no ads)")
-
+'''
 
 #11.4-6 lvl + offer troll - Test 316
 fourth_level()
@@ -120,12 +123,14 @@ sleep(5)
 check_ads_int()
 sleep(5)
 exit_popup_noads()
+exit_popup_merlin()
 
 fifth_level()
 sleep(5)
 check_ads_int()
 sleep(5)
 exit_popup_noads()
+exit_popup_merlin()
 
 sixth_level()
 sleep(5)
@@ -133,6 +138,32 @@ check_ads_int()
 sleep(5)
 exit_popup_noads()
 exit_popup_troll()
+exit_popup_merlin()
+
+#12.Основыне локации (по граничным значениям)
+
+
+#Открывает дебаггер-репортер
+open_debug_reporter()
+sleep(3)
+fill_the_field(15)
+sleep(3)
+close_debug_reporter()
+sleep(5)
+
+#Запуск 15 лвла
+fifteenth_level()
+sleep(5)
+check_ads_int()
+sleep(5)
+exit_popup_noads()
+exit_popup_troll()
+exit_popup_merlin()
+
+#Odysseus
+
+
+
 
 from airtest.report.report import simple_report
 simple_report(__file__, logpath=None)
