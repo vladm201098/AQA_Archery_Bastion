@@ -7,7 +7,7 @@ class CommonLocators:
     # Common
     icon_archery = Template(r"tpl1662490750512.png", record_pos=(0.079, -0.039), resolution=(1080, 1920)) # Иконка Лучники
     play_level_button = Template(r"tpl1662728980111.png", record_pos=(0.057, 0.236), resolution=(1080, 1920)) # Play Level button
-    play_level_button_new_ui = Template(r"tpl1692969510764.png", record_pos=(0.072, 0.281), resolution=(1080, 1920))
+    play_level_button_new_ui = Template(r"tpl1692969510764.png", record_pos=(0.072, 0.281), resolution=(1080, 1920)) #Play level button New UI
 
     setting_button = Template(r"tpl1662729047792.png", record_pos=(-0.433, -0.766), resolution=(1080, 1920))
     check_box_sound_fill = Template(r"tpl1682696698977.png", record_pos=(-0.152, -0.098), resolution=(1080, 1920))
@@ -33,6 +33,7 @@ class CommonLocators:
     upgrade_castle_active = Template(r"tpl1662731040350.png", record_pos=(0.201, 0.461), resolution=(1080, 1920))
     upgrade_castle_disactive = Template(r"tpl1662731084175.png", record_pos=(0.203, 0.461), resolution=(1080, 1920))
     loading_screen = Template(r"tpl1670454389916.png", record_pos=(0.005, 0.646), resolution=(1080, 1920))
+    attack_button = Template(r"tpl1694192114701.png", record_pos=(-0.004, 0.488), resolution=(1080, 1920))
 
 
     
@@ -153,6 +154,28 @@ class PopupTrollLocators:
     pay_button = Template(r"tpl1665508015991.png", record_pos=(0.0, 0.431), resolution=(1080, 1920))
     cross_popup_button = Template(r"tpl1665507692457.png", record_pos=(-0.432, -0.767), resolution=(1080, 1920))
 
+    
+class PopupMerlinLocators:
+    mage_merlin = Template(r"tpl1693324992812.png", record_pos=(-0.005, -0.493), resolution=(1080, 1920))
+    watch_ad_button = Template(r"tpl1693325221861.png", record_pos=(0.001, 0.429), resolution=(1080, 1920))
+
+    cross_popup_button = Template(r"tpl1665507692457.png", record_pos=(-0.432, -0.767), resolution=(1080, 1920))
+
+class PopupHeroesLocators:
+    odysseus = Template(r"tpl1694794777279.png", record_pos=(-0.005, -0.487), resolution=(1080, 1920))
+    pay_button_odysseus = Template(r"tpl1694794815037.png", record_pos=(-0.002, 0.426), resolution=(1080, 1920))
+    storm_god = Template(r"tpl1693934739000.png", record_pos=(0.0, -0.485), resolution=(1080, 1920))
+    pay_button_storm = Template(r"tpl1693934787291.png", record_pos=(-0.002, 0.423), resolution=(1080, 1920))
+    frost_ninja = Template(r"tpl1693935051312.png", record_pos=(0.001, -0.484), resolution=(1080, 1920))
+    pay_button_frost = Template(r"tpl1693935080129.png", record_pos=(-0.001, 0.428), resolution=(1080, 1920))
+
+    cross_popup_button = Template(r"tpl1665507692457.png", record_pos=(-0.432, -0.767), resolution=(1080, 1920))
+
+class PopupNewUnitsLocators:
+    get_new_units = Template(r"tpl1696859319120.png", record_pos=(0.001, -0.555), resolution=(1080, 1920))
+    no_thanks = Template(r"tpl1696859347870.png", record_pos=(0.002, 0.406), resolution=(1080, 1920))
+    claim = Template(r"tpl1696859365220.png", record_pos=(0.001, 0.251), resolution=(1080, 1920))
+
 
 class AdsLocators:
     #interstisial
@@ -161,6 +184,7 @@ class AdsLocators:
     
     #banner
     place_ads_banner = Template(r"tpl1682675639270.png", record_pos=(0.002, 0.84), resolution=(1080, 1920))
+    
 
 
     #openapp

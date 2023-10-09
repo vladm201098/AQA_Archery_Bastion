@@ -60,11 +60,17 @@ def restart_level_menu_test():
 #Try again(Restart) - Test 304    
 def try_again_ingame():
     try_again_test() # тест на то что есть кнопка рестарт (круглая)
+    sleep(1.5)
     open_or_closed_debug() # /Открытие дебаггера
+    sleep(1.5)
     debug_lose_button()
+    sleep(1.5)
     open_or_closed_debug() # /Закрытие дебаггера
+    sleep(1.5)
     try_again_defeat_test() # тест на то что есть кнопка Defeat
+    sleep(1.5)
     restart_ingame_button()
+    sleep(1.5)
     try_again_test() # тест на то что нет кнопки play/ есть кнопка рестарта(значит на находимся на лвл)
     #print("Test 304 - PASSED (Try again - Restart)")
 
@@ -83,8 +89,11 @@ def try_again_defeat_test():
 def lose_menu_ingame():
     try_again_test() # тест на то что есть кнопка рестарт (круглая)
     open_or_closed_debug() # /Открытие дебаггера
+    sleep(1.5)
     debug_lose_button()
+    sleep(1.5)
     open_or_closed_debug() # /Закрытие дебаггера
+    sleep(1.5)
     try_again_defeat_test() # тест на то что есть кнопка Defeat
     sleep(2)
     menu_ingame_button()
