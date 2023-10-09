@@ -42,7 +42,6 @@ __author__ = "Vladislav"
 
 from airtest.core.api import *
 from airtest.cli.parser import cli_setup
-#from AQA_Archery_Bastion.core.def_core_first_sixth import *
 from AQA_Archery_Bastion.tests.test_common import *
 from AQA_Archery_Bastion.core.first_level import *
 from AQA_Archery_Bastion.core.second_level import *
@@ -58,8 +57,10 @@ from AQA_Archery_Bastion.core.popups_offers import *
 
 if not cli_setup():
     auto_setup(__file__, logdir=None, devices=["Android:///",], project_root="C:/Users/Vladislav/Downloads/AirtestIDE/AirtestIDE/AQA_Archery_Bastion")
+    
+using("C:/Users/Vladislav/Downloads/AirtestIDE/AirtestIDE/AQA_Archery_Bastion/locators")
 
-'''
+
 #1.1-5 пункт
 test_common()
 
@@ -115,7 +116,7 @@ sleep(5)
 exit_popup_noads()
 exit_popup_merlin()
 print("Test 315 - PASSED (3 lvl + offer no ads)")
-'''
+
 
 #11.4-6 lvl + offer troll - Test 316
 fourth_level()
@@ -167,3 +168,4 @@ exit_popup_merlin()
 
 from airtest.report.report import simple_report
 simple_report(__file__, logpath=None)
+
