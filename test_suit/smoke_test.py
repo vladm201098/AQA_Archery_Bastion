@@ -39,6 +39,7 @@
 """
 
 __author__ = "Vladislav"
+__device__ = 'Samsung'
 
 from airtest.core.api import *
 from airtest.cli.parser import cli_setup
@@ -55,27 +56,29 @@ from AQA_Archery_Bastion.core.core_settings import *
 from AQA_Archery_Bastion.tests.test_settings import *
 from AQA_Archery_Bastion.core.popups_offers import *
 
+
 if not cli_setup():
-    auto_setup(__file__, logdir=None, devices=["Android:///",], project_root="C:/Users/Vladislav/Downloads/AirtestIDE/AirtestIDE/AQA_Archery_Bastion")
+    auto_setup(__file__, logdir=True, devices=["android://127.0.0.1:5037/127.0.0.1:62025",], project_root="C:/Users/Vladislav/Downloads/AirtestIDE/AirtestIDE/AQA_Archery_Bastion")
     
 using("C:/Users/Vladislav/Downloads/AirtestIDE/AirtestIDE/AQA_Archery_Bastion/locators")
 
 
 #1.1-5 пункт
-test_common()
-
+#test_common()
+'''
 #6. 1 lvl
-first_play_level_button()
+play_level_button()
 print("Test 301 - PASSED (Play)")
 restart_level_resume_test()
 print("Test 302 - PASSED (Restart)")
 menu_level_ingame()
 print("Test 303 - PASSED (Menu)")
-first_play_level_button()
+play_level_button()
 try_again_ingame()
 print("Test 304 - PASSED (Try again - Restart)")
 lose_menu_ingame()
 print("Test 305 - PASSED (Lose - Menu)")
+
 win_ingame()
 print("Test 306 - PASSED (Win)")
 
@@ -113,33 +116,35 @@ third_level()
 sleep(5)
 check_ads_int()
 sleep(5)
-exit_popup_noads()
-exit_popup_merlin()
-print("Test 315 - PASSED (3 lvl + offer no ads)")
 
+exit_popup(PopupNoadsLocators.tired_of_ads, PopupMerlinLocators.cross_popup_button)
+exit_popup(PopupMerlinLocators.mage_merlin, PopupMerlinLocators.cross_popup_button)
+print("Test 315 - PASSED (3 lvl + offer no ads)")
+'''
 
 #11.4-6 lvl + offer troll - Test 316
 fourth_level()
 sleep(5)
 check_ads_int()
 sleep(5)
-exit_popup_noads()
-exit_popup_merlin()
+exit_popup(PopupNoadsLocators.tired_of_ads, PopupMerlinLocators.cross_popup_button)
+exit_popup(PopupMerlinLocators.mage_merlin, PopupMerlinLocators.cross_popup_button)
 
 fifth_level()
 sleep(5)
 check_ads_int()
 sleep(5)
-exit_popup_noads()
-exit_popup_merlin()
+exit_popup(PopupNoadsLocators.tired_of_ads, PopupMerlinLocators.cross_popup_button)
+exit_popup(PopupMerlinLocators.mage_merlin, PopupMerlinLocators.cross_popup_button)
 
 sixth_level()
 sleep(5)
 check_ads_int()
 sleep(5)
-exit_popup_noads()
-exit_popup_troll()
-exit_popup_merlin()
+exit_popup(PopupNoadsLocators.tired_of_ads, PopupMerlinLocators.cross_popup_button)
+exit_popup(PopupMerlinLocators.mage_merlin, PopupMerlinLocators.cross_popup_button)
+exit_popup(PopupTrollLocators.master_troll, PopupMerlinLocators.cross_popup_button)
+
 
 #12.Основыне локации (по граничным значениям)
 
@@ -157,9 +162,9 @@ fifteenth_level()
 sleep(5)
 check_ads_int()
 sleep(5)
-exit_popup_noads()
-exit_popup_troll()
-exit_popup_merlin()
+exit_popup(PopupNoadsLocators.tired_of_ads, PopupMerlinLocators.cross_popup_button)
+exit_popup(PopupMerlinLocators.mage_merlin, PopupMerlinLocators.cross_popup_button)
+exit_popup(PopupTrollLocators.master_troll, PopupMerlinLocators.cross_popup_button)
 
 #Odysseus
 

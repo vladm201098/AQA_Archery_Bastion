@@ -6,8 +6,8 @@ class CommonLocators:
 
     # Common
     icon_archery = Template(r"tpl1662490750512.png", record_pos=(0.079, -0.039), resolution=(1080, 1920)) # Иконка Лучники
-    play_level_button = Template(r"tpl1662728980111.png", record_pos=(0.057, 0.236), resolution=(1080, 1920)) # Play Level button
-    play_level_button_new_ui = Template(r"tpl1692969510764.png", record_pos=(0.072, 0.281), resolution=(1080, 1920)) #Play level button New UI
+    #play_level_button = Template(r"tpl1662728980111.png", record_pos=(0.057, 0.236), resolution=(1080, 1920)) # Play Level button
+    play_level_button = Template(r"tpl1692969510764.png", record_pos=(0.072, 0.281), resolution=(1080, 1920)) #Play level button New UI
 
     setting_button = Template(r"tpl1662729047792.png", record_pos=(-0.433, -0.766), resolution=(1080, 1920))
     check_box_sound_fill = Template(r"tpl1682696698977.png", record_pos=(-0.152, -0.098), resolution=(1080, 1920))
@@ -94,7 +94,9 @@ class DebaggerLocators:
     debug_win_button = Template(r"tpl1662731310721.png", record_pos=(-0.115, -0.444), resolution=(1080, 1920))
     add_bomb_button = Template(r"tpl1662731495438.png", record_pos=(-0.128, 0.073), resolution=(1080, 1920))
     debug_money_button = Template(r"tpl1662731400113.png", record_pos=(-0.119, 0.179), resolution=(1080, 1920))
-    rate_us_button = Template(r"tpl1685050916219.png", record_pos=(-0.113, 0.594), resolution=(1080, 1920))
+    #rate_us_button = Template(r"tpl1685050916219.png", record_pos=(-0.113, 0.594), resolution=(1080, 1920))
+    rate_us_button = Template(r"tpl1696882753694.png", record_pos=(-0.116, 0.697), resolution=(1080, 1920))
+
 
     
     icon_debug_reporter = Template(r"tpl1684411155924.png", record_pos=(0.35, -0.691), resolution=(1080, 1920))
@@ -117,7 +119,9 @@ class RateUsLocators:
     #Rate US
     
     logo_rate_us = Template(r"tpl1663606776156.png", record_pos=(-0.002, -0.211), resolution=(1080, 1920)) # Надпись Rate us
-    submit_button_active  = Template(r"tpl1685051014983.png", record_pos=(-0.007, 0.305), resolution=(1080, 1920)) # Кнопка Submit
+    #submit_button_active  = Template(r"tpl1685051014983.png", record_pos=(-0.007, 0.305), resolution=(1080, 1920))
+    submit_button_active = Template(r"tpl1696943435824.png", record_pos=(-0.002, 0.306), resolution=(1080, 1920))
+                                            # Кнопка Submit
     submit_button_nonactive = Template(r"tpl1663662505106.png", record_pos=(0.003, 0.306), resolution=(1080, 1920))
     cross = Template(r"tpl1682675501550.png", record_pos=(0.285, -0.278), resolution=(1080, 1920))
 

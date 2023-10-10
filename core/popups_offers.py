@@ -24,12 +24,12 @@ def exit_popup(locator,close_locator):
             #touch(PopupHeroesLocators.claim_button_odysseus)
 
             
-exit_popup(PopupHeroesLocators.odysseus, PopupMerlinLocators.cross_popup_button)    #Manual start test
-exit_popup(PopupMerlinLocators.mage_merlin, PopupMerlinLocators.cross_popup_button)    #Manual start test
-exit_popup(PopupTrollLocators.master_troll, PopupMerlinLocators.cross_popup_button)
-exit_popup(PopupNoadsLocators.tired_of_ads, PopupMerlinLocators.cross_popup_button)
-exit_popup(PopupHeroesLocators.frost_ninja, PopupMerlinLocators.cross_popup_button)
-exit_popup(PopupNewUnitsLocators.get_new_units, PopupNewUnitsLocators.no_thanks)
+#exit_popup(PopupHeroesLocators.odysseus, PopupMerlinLocators.cross_popup_button)    #Manual start test
+#exit_popup(PopupMerlinLocators.mage_merlin, PopupMerlinLocators.cross_popup_button)    #Manual start test
+#exit_popup(PopupTrollLocators.master_troll, PopupMerlinLocators.cross_popup_button)
+#exit_popup(PopupNoadsLocators.tired_of_ads, PopupMerlinLocators.cross_popup_button)
+#exit_popup(PopupHeroesLocators.frost_ninja, PopupMerlinLocators.cross_popup_button)
+#exit_popup(PopupNewUnitsLocators.get_new_units, PopupNewUnitsLocators.no_thanks)
 
 #check_popup_noads()    #Manual start test
 #check_popup_troll()    #Manual start test

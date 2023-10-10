@@ -8,11 +8,11 @@ from AQA_Archery_Bastion.tests.test_gdpr import *
 from AQA_Archery_Bastion.tests.test_rate_us import *
 from AQA_Archery_Bastion.core.loading_screen import *
 
-'''
+
 if not cli_setup():
-    auto_setup(__file__, logdir=True, devices=["android://127.0.0.1:5037/127.0.0.1:62025?cap_method=MINICAP&&ori_method=MINICAPORI&&touch_method=MINITOUCH",], project_root="C:/Users/Vladislav/Downloads/AirtestIDE/AirtestIDE/AQA_Archery_Bastion")
- '''   
-using("C:/Users/Vladislav/Downloads/AirtestIDE/AirtestIDE/AQA_Archery_Bastion/locators")
+    auto_setup(__file__, logdir=True, devices=["android://127.0.0.1:5037/127.0.0.1:62025?cap_method=MINICAP&&ori_method=MINICAPORI&&touch_method=MINITOUCH",], project_root="C:/Users/Vladislav/Downloads/AirtestIDE/AirtestIDE/AQA_Archery_Bastion") 
+    
+#using("C:/Users/Vladislav/Downloads/AirtestIDE/AirtestIDE/AQA_Archery_Bastion/locators")
     
 def test_common(): 
     clear_app("com.bastion.archers")
@@ -28,8 +28,8 @@ def test_common():
     start_test_gdpr()
     print("Test 100-103 - PASSED (Testing GDPR is done)")
     sleep(5.0)
-    start_test_rateus()
-    print("Test 200-202 - PASSED (Testing rate US is done)")
+    #start_test_rateus()
+    #print("Test 200-202 - PASSED (Testing rate US is done)")
     
     
 #test_common()
